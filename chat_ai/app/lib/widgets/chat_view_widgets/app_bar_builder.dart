@@ -1,6 +1,7 @@
 import 'package:app/theme/colors_app.dart';
 import 'package:app/theme/text_style_app.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 AppBar appBarBuilder(BuildContext context) {
   return AppBar(
@@ -11,9 +12,9 @@ AppBar appBarBuilder(BuildContext context) {
       mainAxisAlignment: MainAxisAlignment.center,
       spacing: 8,
       children: [
-        Image.asset(
-          "assets/images/robot.png",
-          width: MediaQuery.of(context).size.width * .1,
+        SvgPicture.asset(
+          "assets/images/regular-user-robot.svg",
+          width: MediaQuery.of(context).size.width * .08,
         ),
         Column(
           children: [
