@@ -1,4 +1,4 @@
-package com.khalid.flowza
+package com.flowza.app
 
 import io.flutter.embedding.android.FlutterActivity
 
