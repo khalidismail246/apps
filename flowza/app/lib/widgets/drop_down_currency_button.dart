@@ -12,7 +12,23 @@ class _DropDownCurrencyButtonState extends State<DropDownCurrencyButton> {
   String selectedCurrency = "USD";
   @override
   Widget build(BuildContext context) {
-    List<String> currencies = ["USD", "EUR", "SAR", "AED", "EGP", "QAR", "KWD"];
+    List<String> currencies = [
+      "USD",
+      "EUR",
+      "SAR",
+      "AED",
+      "EGP",
+      "QAR",
+      "KWD",
+      "BHD",
+      "OMR",
+      "JOD",
+      "IQD",
+      "LBP",
+      "SYP",
+      "TRY",
+      "YER",
+    ];
     return DropdownButton<String>(
       value: selectedCurrency,
       items: currencies
