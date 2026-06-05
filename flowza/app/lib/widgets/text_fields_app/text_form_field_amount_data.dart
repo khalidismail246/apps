@@ -72,13 +72,15 @@ class _TextFormFieldAmountDataState extends State<TextFormFieldAmountData> {
             ),
           ),
         ),
-        DropDownCurrencyButton(
-          onChanged: (String currency) {
-            setState(() {
-              selectedCurrency = currency;
-            });
-            controller.clear();
-          },
+        Expanded(
+          child: DropDownCurrencyButton(
+            onChanged: (String currency) {
+              setState(() {
+                selectedCurrency = currency;
+              });
+              controller.clear();
+            },
+          ),
         ),
       ],
     );

@@ -106,15 +106,19 @@ class _FormatSheetBankState extends State<FormatSheetBank> {
                       },
                     ),
                   ),
-                  DropDownCurrencyButton(
-                    onChanged: (String currency) {
-                      this.currency = currency;
-                    },
+                  Expanded(
+                    child: DropDownCurrencyButton(
+                      onChanged: (String currency) {
+                        this.currency = currency;
+                      },
+                    ),
                   ),
-                  DropButtonTypeOfBankCertificate(
-                    onChanged: (String type) {
-                      typeCertificate = type;
-                    },
+                  Expanded(
+                    child: DropButtonTypeOfBankCertificate(
+                      onChanged: (String type) {
+                        typeCertificate = type;
+                      },
+                    ),
                   ),
                 ],
               ),
